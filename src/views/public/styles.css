@@ -4,6 +4,15 @@ header {
     padding: 30px;
     text-align: center;
     border-radius: 5px;
+    grid-area: head;
+}
+
+article {
+    grid-area: content;
+}
+
+aside {
+    grid-area: side;
 }
 
 h1 {
@@ -17,6 +26,7 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
+    grid-area: nav;
 }
 
 nav ul {
@@ -54,14 +64,21 @@ main {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-areas:
+        "head head head"
+        "nav nav nav"
+        "content content side";
+    grid-template-rows: 100px auto 100px;
 }
 
 body {
     background-color: rgb(53, 53, 176);
 }
+
 footer {
     background-color: black;
     color: whitesmoke;
     text-align: center;
-    padding: 10px;
+    padding: 50px;
 }
