@@ -9,6 +9,8 @@ header {
     text-align: center;
     font-size: 80%;
     padding: 2.5%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     background-color: whitesmoke;
 }
 
@@ -30,13 +32,20 @@ header .background_img .align-text img {
     margin-bottom: 9.5%;
 }
 
-header .background_img .align-text h1 a {
+.title {
+    background-color: navy;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 0.002%;
+    padding-bottom: 0.002%;
+}
+
+.title h1 a {
+    text-align: center;
     font-size: 22px;
-    background-color: black;
     text-decoration: none;
     color: white;
-    padding: 0.5%;
-    border-radius: 5px;
 }
 
 article {
@@ -86,10 +95,13 @@ nav ul li a:hover {
 }
 
 main {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-top: 0.05%;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    background-color: #fff;
     border-radius: 5px;
+    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     display: grid;
     grid-template-areas:
@@ -99,7 +111,7 @@ main {
 }
 
 body {
-    background-color: rgb(53, 53, 176);
+    background-color: rgb(27, 27, 176);
 }
 
 footer {
