@@ -1,10 +1,42 @@
 header {
-    background-color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
     text-align: center;
+    height: 370px;
+    background-color: whitesmoke;
+    
+}
+
+.sub {
+    text-align: center;
+    font-size: 80%;
+    padding: 2.5%;
+    background-color: whitesmoke;
+}
+
+header .background_img {
+    background-image: url("../../img/Ammament211.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+header .background_img .align-text {
+    padding-top: 0;
+}
+
+header .background_img .align-text img {
+    height: 150px;
+    margin-bottom: 9.5%;
+}
+
+header .background_img .align-text h1 a {
+    font-size: 22px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 0.5%;
     border-radius: 5px;
-    grid-area: head;
 }
 
 article {
@@ -13,11 +45,6 @@ article {
 
 aside {
     grid-area: side;
-}
-
-h1 {
-    margin: 0%;
-    font-size: 26px;
 }
 
 nav {
@@ -37,8 +64,10 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav ul li a {
@@ -57,19 +86,16 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 20px;
-    border: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     display: grid;
     grid-template-areas:
-        "head head head"
         "nav nav nav"
         "content content side";
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows:  auto 100px;
 }
 
 body {
